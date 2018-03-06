@@ -1,0 +1,20 @@
+<ul class="nav-container">
+  <li class="nav-item{% if page.url == '/' %}--current{% endif %}"><a href="{{ site.url }}">
+    home
+  </a></li>
+{% for _page in site.pages %}
+
+{% if _page.published == true %}
+  <li class="nav-item{% if page.title == _page.title %}--current{% endif %}"><a href="{{ _page.url }}">
+    {% if _page.nav_title %}
+    {{ _page.nav_title }}
+    {% else %}
+    {{ _page.title }}
+
+    {% endif %}
+  </a></li>
+{% endif %}
+
+
+{% endfor %}
+</ul>

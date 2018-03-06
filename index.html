@@ -1,25 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Nashville UX</title>
-  </head>
-  <style media="screen">
-    #instafeed article{
-      width: 30%;
-      float: left;
-    }
-
-    #instafeed article:nth-of-type(3n+4){
-      clear: left;
-    }
-  </style>
-  <body>
-    <header>
-      <h1>Nashville UX</h1>
-    </header>
-
-    {% include navigation.html %}
+---
+layout: default
+---
 
     <p>Middle Tennessee's community for user experience design. Together we:</p>
     <ul>
@@ -28,10 +9,31 @@
       <li>Foster professional networks through social and educational events.</li>
     </ul>
 
+<article id="meet" class="tile--med--center">
+  Come One, Come All
+  <h2>The Meetups</h2>
+  <p>We meet on the last Thursday of the month and most events are free to attend.</p>
+  <a href="#" class="button">Learn More</a>
+</article>
 
-<p>We meet on the last Thursday of the month and most events are free to attend.</p>
+<article id="discuss" class="tile--med--center">
+Constantly Talking
+
+<h2>The Slack</h2>
+<a href="#" class="button">Request an Invite</a>
+<a href="#" class="button">Open Slack</a>
+</article>
+
+Stay in the Know
+
+Follow us
+
+
+  <nav class="sqs-svg-icon--list">
+    <a href="http://instagram.com/nashux" target="_blank" class="instagram">Instagram</a>
+    <a href="https://www.facebook.com/nashvilleux/" target="_blank" class="facebook">Facebook</a>
+    <a href="https://medium.com/nashvilleux/" target="_blank" class="medium">Medium</a>
+    <a href="https://twitter.com/nashvilleux" target="_blank" class="twitter">Twitter</a>
+  </nav>
 
   {% include instagram.html %}
-
-  </body>
-</html>

@@ -2,3 +2,5 @@
 version: 3.7.3
 name: Nashville UX
 description: Transform your plain text into static websites and blogs
+exclude:
+- _site/

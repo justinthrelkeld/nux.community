@@ -1,0 +1,89 @@
+body{
+  width: 80%;
+  margin: 0 auto;
+  font-family: helvetica, sans-serif;
+}
+
+header{
+  clear: both;
+  overflow: hidden;
+}
+
+.header__logo{
+  height: 120px
+  float: left;
+}
+.header__title{
+  display: inline-block;
+  float: left;
+  display: none;
+}
+.header__nav{
+  width: 60%;
+  float: right;
+  clear: both;
+  padding-top: 80px;
+  text-align: right;
+}
+
+.nav-container{
+  margin: 0;
+  padding: 0;
+}
+
+[class^="nav-item"]{
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 2em;
+}
+.nav-item--current a, .nav-item--current a:visited{
+  color: #000000;
+  text-decoration: none;
+}
+
+article[class^="tile--med"]{
+  padding-top: 4em;
+  width: 50%;
+  height: 50vh;
+  min-height: 300px;
+  float: right;
+}
+
+article[class^="tile--med"]:last-child{
+  clear: right;
+}
+
+[class*="--center"]{
+  text-align: center;
+}
+
+#instafeed{
+  clear: both;
+}
+#instafeed article{
+  width: 30%;
+  float: left;
+}
+
+#instafeed article img{
+  max-width: 100%;
+}
+
+#instafeed article:nth-of-type(3n+4){
+  clear: left;
+}
+
+
+.button{
+  padding: 1.5em 2em;
+  border: 1px solid black;
+  border-radius: 2px;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button:hover{
+  color: white;
+  background-color: black;
+}
